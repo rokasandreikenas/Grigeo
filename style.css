@@ -1,0 +1,119 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 120px;
+  padding: 15px 60px 0px 60px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  height: 75px;
+  width: 150px;
+}
+
+.header-main-info {
+  color: #8c8c8c;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-main-info div {
+  margin-top: 6px;
+}
+
+.header-main-info div span {
+  margin-left: 10px;
+}
+
+.header-main-info nav {
+  margin-top: 10px;
+}
+
+.header-main-info nav a {
+  margin-left: 12px;
+  color: #9c9c9c;
+}
+
+.header-main-info nav a:hover {
+  color: #b9b9b9;
+}
+
+.percents {
+  color: #00d100;
+}
+
+.platform-name {
+  font-size: 0.75rem;
+}
+
+.header-secondary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.header-secondary a {
+  color: #8c8c8c;
+}
+
+.header-secondary a:hover {
+  color: #00d100;
+  transition: 300ms;
+  /* Perejimas */
+}
+
+.hero {
+  height: 500px;
+}
+
+.hero img {
+  object-fit: cover;
+}
+
+.container {
+  background-color: #f4f4f4;
+  padding: 0px 40px;
+}
+
+section {
+  padding: 30px;
+  background-color: white;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header a {
+  color: #00d100;
+  font-size: 12px;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+}
