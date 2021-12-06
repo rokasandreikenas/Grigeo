@@ -11,7 +11,13 @@ img {
   height: 100%;
 }
 
-header {
+hr {
+  margin: 40px 0px;
+  border: 1px solid #e8e8e8;
+  background-color: #e8e8e8;
+}
+
+.top-bar-header {
   height: 120px;
   padding: 15px 60px 0px 60px;
 }
@@ -81,11 +87,29 @@ header {
 }
 
 .hero {
+  background-image: url("./green-leaves.jpg");
+  position: relative;
   height: 500px;
 }
 
-.hero img {
-  object-fit: cover;
+.hero::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.people-image {
+  display: flex;
+  justify-content: center;
+}
+
+.people-image img {
+  margin-top: -200px;
+  z-index: 999;
+  width: 500px;
 }
 
 .container {
@@ -93,7 +117,7 @@ header {
   padding: 0px 40px;
 }
 
-section {
+.content {
   padding: 30px;
   background-color: white;
 }
@@ -115,5 +139,46 @@ section {
 }
 
 .card {
-  width: 32%;
+  width: 30%;
+  color: black;
+  transition: 1s;
+  padding: 10px;
+}
+
+.card:hover {
+  padding: 0px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
+.card .read-more {
+  font-size: 12px;
+  color: #00d100;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav a {
+  color: #9c9c9c;
+  font-size: 14px;
+  padding: 0px 14px;
+  border-right: 1px solid #9c9c9c;
+  transition: 500ms;
+}
+
+footer nav a:last-child {
+  border-right: none;
+}
+
+footer nav a:hover {
+  opacity: 0.8;
 }
