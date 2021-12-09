@@ -4,6 +4,13 @@ body {
 
 a {
   text-decoration: none;
+  color: #8c8c8c;
+}
+
+a:hover {
+  color: #00d100;
+  transition: 300ms;
+  /* Perejimas */
 }
 
 img {
@@ -18,8 +25,12 @@ hr {
 }
 
 .top-bar-header {
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
   height: 120px;
   padding: 15px 60px 0px 60px;
+  background-color: white;
 }
 
 .header-main {
@@ -70,24 +81,14 @@ hr {
   font-size: 0.75rem;
 }
 
-.header-secondary {
+.nav-secondary {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.header-secondary a {
-  color: #8c8c8c;
-}
-
-.header-secondary a:hover {
-  color: #00d100;
-  transition: 300ms;
-  /* Perejimas */
-}
-
 .hero {
-  background-image: url("./green-leaves.jpg");
+  background-image: url("images/green-leaves.jpg");
   position: relative;
   height: 500px;
 }
@@ -181,4 +182,98 @@ footer nav a:last-child {
 
 footer nav a:hover {
   opacity: 0.8;
+}
+
+.nav-hero {
+  display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 968px) {
+  .nav-secondary {
+    display: none;
+  }
+
+  .nav-hero {
+    position: relative;
+    display: block;
+    background-color: rgba(233, 233, 233, 0.8);
+    text-align: right;
+  }
+
+  .nav-hero a {
+    display: block;
+    padding: 10px;
+    margin-right: 20px;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width: 768px) {
+  .top-bar-header {
+    height: 100%;
+  }
+
+  .header-main {
+    justify-content: center;
+  }
+
+  .logo-container {
+    width: 250px;
+    height: 100px;
+  }
+
+  .nav-secondary {
+    display: none;
+  }
+
+  .nav-hero {
+    position: relative;
+    display: block;
+    background-color: rgba(233, 233, 233, 0.8);
+    text-align: center;
+  }
+
+  .nav-hero a {
+    display: block;
+    padding: 10px;
+  }
+
+  .header-main-info {
+    display: none;
+  }
+
+  .people-image img {
+    margin-top: -150px;
+    width: 350px;
+  }
+
+  .news {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+  }
+
+  .card .card-image {
+    width: 40%;
+  }
+
+  .card .card-column {
+    width: 60%;
+    padding-left: 20px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  footer nav a {
+    display: block;
+    font-size: 16px;
+    border-right: none;
+    margin-bottom: 10px;
+  }
 }
